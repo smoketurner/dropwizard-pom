@@ -55,6 +55,7 @@
   </developers>
 
   <properties>
+    <maven.compiler.release>8</maven.compiler.release>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -65,6 +66,7 @@
     <google-java-format.version>1.6</google-java-format.version>
     <jmh.version>1.21</jmh.version>
     <nullaway.version>0.5.3</nullaway.version>
+    <spotbugs.version>3.1.6</spotbugs.version>
   </properties>
 
   <dependencies>
@@ -269,7 +271,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
+        <version>3.8.0</version>
         <configuration>
           <compilerId>javac-with-errorprone</compilerId>
           <forceJavacCompilerUse>true</forceJavacCompilerUse>
@@ -415,6 +417,32 @@
             <version>${google-java-format.version}</version>
           </dependency>
         </dependencies>
+      </plugin>
+      <plugin>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <version>${spotbugs.version}</version>
+        <configuration>
+          <effort>max</effort>
+          <excludeFilterFile>spotbugs.xml</excludeFilterFile>
+          <nested>false</nested>
+          <threshold>low</threshold>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>com.github.spotbugs</groupId>
+            <artifactId>spotbugs</artifactId>
+            <version>${spotbugs.version}</version>
+          </dependency>
+        </dependencies>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+            <phase>verify</phase>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
