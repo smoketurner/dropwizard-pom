@@ -281,8 +281,6 @@
         <configuration>
           <compilerId>javac-with-errorprone</compilerId>
           <forceJavacCompilerUse>true</forceJavacCompilerUse>
-          <source>${maven.compiler.source}</source>
-          <target>${maven.compiler.target}</target>
           <showWarnings>true</showWarnings>
           <annotationProcessorPaths>
             <path>
