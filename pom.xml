@@ -65,7 +65,7 @@
     <errorprone.version>2.3.1</errorprone.version>
     <google-java-format.version>1.6</google-java-format.version>
     <jmh.version>1.21</jmh.version>
-    <nullaway.version>0.5.4</nullaway.version>
+    <nullaway.version>0.5.5</nullaway.version>
     <spotbugs.version>3.1.6</spotbugs.version>
   </properties>
 
