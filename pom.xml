@@ -84,7 +84,7 @@
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>2.23.0</version>
+      <version>2.23.4</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -113,7 +113,7 @@
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>27.0-jre</version>
+        <version>27.0.1-jre</version>
         <exclusions>
           <exclusion>
             <groupId>com.google.code.findbugs</groupId>
@@ -199,7 +199,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.22.0</version>
+        <version>2.22.1</version>
         <dependencies>
           <dependency>
             <groupId>org.ow2.asm</groupId>
@@ -211,7 +211,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>2.22.0</version>
+        <version>2.22.1</version>
         <dependencies>
           <dependency>
             <groupId>org.ow2.asm</groupId>
@@ -369,7 +369,7 @@
           <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
           <properties>
             <owner>Smoke Turner, LLC</owner>
-            <email>contact@smoketurner.com</email>
+            <email>github@smoketurner.com</email>
           </properties>
           <mapping>
             <java>SLASHSTAR_STYLE</java>
@@ -379,6 +379,7 @@
             <exclude>LICENSE</exclude>
             <exclude>**/*.txt</exclude>
             <exclude>**/*.sh</exclude>
+            <exclude>**/*.md</exclude>
             <exclude>**/.editorconfig</exclude>
             <exclude>**/.gitattributes</exclude>
             <exclude>.mvn/**</exclude>
@@ -400,7 +401,7 @@
       <plugin>
         <groupId>com.coveo</groupId>
         <artifactId>fmt-maven-plugin</artifactId>
-        <version>2.5.1</version>
+        <version>2.6.0</version>
         <executions>
           <execution>
             <goals>
