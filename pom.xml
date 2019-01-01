@@ -21,7 +21,7 @@
 
   <groupId>com.smoketurner.dropwizard</groupId>
   <artifactId>dropwizard-pom</artifactId>
-  <version>0.0.20-SNAPSHOT</version>
+  <version>0.0.19-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>dropwizard-pom</name>
   <url>https://github.com/smoketurner/dropwizard-pom</url>
