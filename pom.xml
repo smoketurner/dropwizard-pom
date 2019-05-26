@@ -63,7 +63,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <file.encoding>UTF-8</file.encoding>
 
-    <dropwizard.version>1.3.11</dropwizard.version>
+    <dropwizard.version>1.3.12</dropwizard.version>
     <google-java-format.version>1.7</google-java-format.version>
     <jmh.version>1.21</jmh.version>
     <asm.version>7.1</asm.version>
@@ -381,15 +381,24 @@
           </mapping>
           <useDefaultExcludes />
           <excludes>
+            <!-- Ignore license files. -->
             <exclude>LICENSE</exclude>
+            <!-- Ignore text files. -->
             <exclude>**/*.txt</exclude>
+            <!-- Ignore shell script files. -->
             <exclude>**/*.sh</exclude>
-            <exclude>**/*.md</exclude>
-            <exclude>**/.editorconfig</exclude>
-            <exclude>**/.gitattributes</exclude>
+            <!-- Ignore Maven Wrapper files. -->
             <exclude>.mvn/**</exclude>
             <exclude>**/mvnw</exclude>
             <exclude>**/mvnw.cmd</exclude>
+            <!-- Ignore editorconfig file. -->
+            <exclude>**/.editorconfig</exclude>
+            <!-- Ignore gitattributes file. -->
+            <exclude>**/.gitattributes</exclude>
+            <!-- Ignore YAML files. -->
+            <exclude>**/*.yaml</exclude>
+            <exclude>**/*.yml</exclude>
+            <!-- Ignore all resource files. -->
             <exclude>src/main/resources/**</exclude>
             <exclude>src/test/resources/**</exclude>
           </excludes>
