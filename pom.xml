@@ -68,7 +68,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <file.encoding>UTF-8</file.encoding>
 
-    <dropwizard.version>1.3.16</dropwizard.version>
+    <dropwizard.version>1.3.17</dropwizard.version>
     <google-java-format.version>1.7</google-java-format.version>
     <jmh.version>1.22</jmh.version>
     <asm.version>7.2</asm.version>
