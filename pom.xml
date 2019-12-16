@@ -81,6 +81,12 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.5.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>org.assertj</groupId>
       <artifactId>assertj-core</artifactId>
       <version>3.14.0</version>
@@ -110,7 +116,7 @@
     <dependencies>
       <dependency>
         <groupId>io.dropwizard</groupId>
-        <artifactId>dropwizard-dependencies</artifactId>
+        <artifactId>dropwizard-bom</artifactId>
         <version>${dropwizard.version}</version>
         <type>pom</type>
         <scope>import</scope>
@@ -412,15 +418,17 @@
             <exclude>**/mvnw</exclude>
             <exclude>**/mvnw.cmd</exclude>
             <!-- Ignore editorconfig file. -->
-            <exclude>**/.editorconfig</exclude>
+            <exclude>.editorconfig</exclude>
             <!-- Ignore gitattributes file. -->
-            <exclude>**/.gitattributes</exclude>
+            <exclude>.gitattributes</exclude>
             <!-- Ignore YAML files. -->
             <exclude>**/*.yaml</exclude>
             <exclude>**/*.yml</exclude>
             <!-- Ignore all resource files. -->
             <exclude>src/main/resources/**</exclude>
             <exclude>src/test/resources/**</exclude>
+            <!-- Ignore GitHub files -->
+            <exclude>.github/**</exclude>
           </excludes>
         </configuration>
         <executions>
