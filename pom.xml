@@ -116,7 +116,7 @@
     <dependencies>
       <dependency>
         <groupId>io.dropwizard</groupId>
-        <artifactId>dropwizard-bom</artifactId>
+        <artifactId>dropwizard-dependencies</artifactId>
         <version>${dropwizard.version}</version>
         <type>pom</type>
         <scope>import</scope>
@@ -226,25 +226,11 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.2</version>
-        <dependencies>
-          <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm</artifactId>
-            <version>${asm.version}</version>
-          </dependency>
-        </dependencies>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
         <version>2.22.2</version>
-        <dependencies>
-          <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm</artifactId>
-            <version>${asm.version}</version>
-          </dependency>
-        </dependencies>
         <executions>
           <execution>
             <goals>
@@ -294,9 +280,7 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.1.1</version>
         <configuration>
-          <additionalOptions>
-            <option>-html5</option>
-          </additionalOptions>
+          <additionalOptions>-html5</additionalOptions>
         </configuration>
         <executions>
           <execution>
@@ -333,13 +317,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
         <version>3.1.1</version>
-        <dependencies>
-          <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm</artifactId>
-            <version>${asm.version}</version>
-          </dependency>
-        </dependencies>
         <executions>
           <execution>
             <id>analyze</id>
