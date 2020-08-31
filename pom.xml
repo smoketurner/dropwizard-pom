@@ -70,7 +70,7 @@
 
     <dropwizard.version>2.0.12</dropwizard.version>
     <google-java-format.version>1.8</google-java-format.version>
-    <jmh.version>1.25</jmh.version>
+    <jmh.version>1.25.1</jmh.version>
   </properties>
 
   <dependencies>
