@@ -69,7 +69,7 @@
     <file.encoding>UTF-8</file.encoding>
 
     <dropwizard.version>2.0.15</dropwizard.version>
-    <google-java-format.version>1.8</google-java-format.version>
+    <google-java-format.version>1.9</google-java-format.version>
     <jmh.version>1.25.2</jmh.version>
   </properties>
 
