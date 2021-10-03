@@ -176,7 +176,7 @@
             </executions>
             <configuration>
               <passphrase>${gpg.passphrase}</passphrase>
-              <keyname>10B488AC</keyname>
+              <keyname>BDFD0213</keyname>
             </configuration>
           </plugin>
         </plugins>
