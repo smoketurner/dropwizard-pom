@@ -62,7 +62,7 @@
     <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
     <maven.compiler.optimize>false</maven.compiler.optimize>
 
-    <surefire.argLine>-Duser.language=en -Duser.region=US -Duser.timezone=UTC --illegal-access=deny --add-opens java.base/java.net=ALL-UNNAMED</surefire.argLine>
+    <surefire.argLine>-Duser.language=en -Duser.region=US -Duser.timezone=UTC --illegal-access=deny --add-opens java.base/java.net=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED</surefire.argLine>
     <argLine>${surefire.argLine}</argLine>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
