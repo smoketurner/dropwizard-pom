@@ -71,7 +71,7 @@
 
     <dropwizard.version>2.0.28</dropwizard.version>
     <google-java-format.version>1.13.0</google-java-format.version>
-    <jmh.version>1.33</jmh.version>
+    <jmh.version>1.34</jmh.version>
   </properties>
 
   <dependencies>
