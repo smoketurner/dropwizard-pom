@@ -68,7 +68,7 @@
     <file.encoding>UTF-8</file.encoding>
 
     <dropwizard.version>4.0.5</dropwizard.version>
-    <google-java-format.version>1.19.1</google-java-format.version>
+    <google-java-format.version>1.21.0</google-java-format.version>
     <jmh.version>1.37</jmh.version>
   </properties>
 
